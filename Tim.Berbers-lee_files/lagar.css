@@ -1,0 +1,99 @@
+
+section {
+
+margin-left: 10%;
+margin-right: 10%;
+margin-bottom: 50px;
+margin-top: 50px;
+
+}
+.Tim {
+margin-left: 80px;
+margin-right: 500px;
+
+}
+.Bild {
+
+float: right;
+margin-top: 50px;
+padding: 10px;
+border: solid 5px;
+
+
+}
+
+nav {
+    justify-content: space-around;
+    padding: 1rem 0;
+    align-items: center;
+    position: relative;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    display: flex;
+    color: #121212;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    
+    transition: background-color 0.3s;
+
+}
+
+h1 {
+
+text-align: center;
+
+}
+.knapp {
+border-radius: 20px;
+margin-left: 20px;
+margin-right: 20px;
+
+}
+.knapp:hover {
+background-color:rgba(0, 0, 0, 0.2);
+
+}
+
+@media screen and (max-width: 768px) {
+    section, article{
+
+        margin-right:  10px;
+        margin-left: 10px;
+    }
+    img {
+
+        max-width: 325px;
+        
+    }
+    .Tim {
+        margin-left: 10%;
+        margin-right: 10%;
+
+    }
+}
+
+/* Media Query för skärmar upp till 480px (mobiler) */
+@media screen and (max-width: 480px) {
+
+
+    section, article{
+
+        margin-right:  10px;
+        margin-left: 10px;
+    }
+    img {
+
+        max-width: 325px;
+        
+    }
+    .Tim {
+        margin-left: 10%;
+        margin-right: 10%;
+
+    }
+}
+
+

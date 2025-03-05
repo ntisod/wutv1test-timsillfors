@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dating Profil</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+
+        body {
+            background-color: #fdf2f8;
+            color: #333;
+            line-height: 1.6;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #be185d;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #4a5568;
+            font-weight: 500;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #e2e8f0;
+            border-radius: 6px;
+            margin-bottom: 0.5rem;
+            font-size: 1rem;
+        }
+
+        .radio-group,
+        .checkbox-group {
+            margin: 0.5rem 0;
+        }
+
+        .radio-group label,
+        .checkbox-group label {
+            display: inline-block;
+            margin-left: 0.5rem;
+            font-weight: normal;
+        }
+
+        button {
+            background-color: #be185d;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 1.1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #9d174d;
+        }
+
+        .required {
+            color: #be185d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Skapa Din Dating Profil</h1>
+        <form>
+            <div class="form-group">
+                <label for="fname">Förnamn <span class="required">*</span></label>
+                <input type="text" id="fname" name="fname" required>
+            </div>
+
+            <div class="form-group">
+                <label for="lname">Efternamn <span class="required">*</span></label>
+                <input type="text" id="lname" name="lname" required>
+            </div>
+
+            <div class="form-group">
+                <label for="birthdate">Födelsedatum <span class="required">*</span></label>
+                <input type="date" id="birthdate" name="birthdate" required>
+            </div>
+
+            <div class="form-group">
+                <label>Söker <span class="required">*</span></label>
+                <div class="radio-group">
+                    <input type="radio" id="seeking-men" name="seeking" value="men" required>
+                    <label for="seeking-men">Män</label>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" id="seeking-women" name="seeking" value="women">
+                    <label for="seeking-women">Kvinnor</label>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" id="seeking-both" name="seeking" value="both">
+                    <label for="seeking-both">Båda</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Intressen (Välj alla som passar)</label>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="interest1" name="interests" value="matlagning">
+                    <label for="interest1">Matlagning</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="interest2" name="interests" value="resor">
+                    <label for="interest2">Resor</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="interest3" name="interests" value="sport">
+                    <label for="interest3">Sport</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="interest4" name="interests" value="musik">
+                    <label for="interest4">Musik</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="about">Om mig <span class="required">*</span></label>
+                <textarea id="about" name="about" rows="4" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="ideal-date">Min perfekta första dejt</label>
+                <textarea id="ideal-date" name="ideal-date" rows="3"></textarea>
+            </div>
+
+            <button type="submit">Skapa Profil</button>
+        </form>
+    </div>
+</body>
+</html>
